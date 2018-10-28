@@ -1,21 +1,52 @@
-const adminLogin = 'admin';
-const adminPassword = 'm4ngo1zh4ackz0r';
-const cancelUser = 'Отменено пользователем!';
-const accessDenied = 'Доступ запрещен!';
+let taba = 6;
+let sharm = 15;
+let hurgada = 25;
+let userMember = prompt("Введите число участников: ", 1);
 
-let enterLogin = prompt('Введите логин', '');
+if (userMember <= 0 && userMember%2 === 0) {
+    alert("Ошибка ввода");
+}
 
-if (enterLogin === adminLogin) {
-    let enterPass = prompt('Введите пароль', '');
-    if (enterPass === adminPassword){
-        alert('Добро пожаловать!');
-    } else  if (enterPass === null) {
-        alert(cancelUser);
-    } else {
-        alert(accessDenied);
-    }
-} else if (enterLogin === null) {
-    alert(cancelUser);
-} else {
-    alert(accessDenied);
+else if (userMember % 1 !== 0) {
+    alert("Ошибка ввода!!!");
+}
+
+else if (userMember <= taba) {
+
+    if (confirm("Есть место в Taba. Согласны?")===true) {
+        alert('Приятного путешествия в группе Taba');
+        alert('Осталось  ' + (6 - userMember) +' свободных мест');
+    } else if (confirm("Есть место в Sharm. Согласны?")===true) {
+        alert('Приятного путешествия в группе Sharm');
+        alert('Осталось  ' + (15 - userMember) + ' свободных мест');
+    } else if (confirm("Есть место в Hurgada. Согласны?")===true) {
+        alert('Приятного путешествия в группе Hurgada');
+        alert('Осталось  ' + (25 - userMember) + ' свободных мест');
+    } else
+        alert('Нам очень жаль, приходите еще!');
+}
+
+else if (userMember <= sharm) {
+
+    if (confirm("Есть место в Sharm. Согласны?")===true) {
+        alert('Приятного путешествия в группе Sharm');
+        alert('Осталось  ' + (15 - userMember) + ' свободных мест');
+    } else if (confirm("Есть место в Hurgada. Согласны?")===true) {
+        alert('Приятного путешествия в группе Hurgada');
+        alert('Осталось  ' + (25 - userMember) + ' свободных мест');
+    } else
+        alert('Нам очень жаль, приходите еще!');
+}
+
+else if (userMember <= hurgada) {
+
+    if (confirm("Есть место в Hurgada. Согласны?")===true) {
+        alert('Приятного путешествия в группе Hurgada');
+        alert('Осталось  ' + (25 - userMember) + ' свободных мест');
+    } else
+        alert('Нам очень жаль, приходите еще!');
+}
+
+else {
+    alert("Мест нету!")
 }
