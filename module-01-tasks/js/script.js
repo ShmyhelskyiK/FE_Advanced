@@ -1,15 +1,11 @@
 // Задание 10
 let question = prompt('Введите от 1 до 5');
-
-if (question === null) {
-    alert('очень жаль, приходите еще!');
-} else if (question > 5) {
-    alert('Неверный ввод, возможные варианты 1-5!');
-} else {
-
-}
+console.log(question);
 
 switch (question) {
+    case null:
+        alert('очень жаль, приходите еще!');
+        break;
     case "1":
         alert("Каталог хостелов");
         break;
@@ -25,11 +21,9 @@ switch (question) {
     case "5":
         alert("Каталог лучших отелей");
         break;
+    default:
+        alert('Неверный ввод, возможные варианты 1-5!');
     }
-
-
-
-
 
 // Задание 9 ?????
 // let hours = 7;
