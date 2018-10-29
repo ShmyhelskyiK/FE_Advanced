@@ -1,36 +1,79 @@
-// Задание 10
-let question = prompt('Введите от 1 до 5');
-console.log(question);
+// ==============
+// let hours = +prompt('В котором часу установить будильник ?');
+// let minutes = +prompt('Минуты ?');
+// let seconds = +prompt('Секунды ?');
+//
+// function checkHours() {
+//     if (hours  < 10)
+//         return '0' + hours;
+//     return hours;
+// }
+// function checkMinutes() {
+//     if (minutes  < 10)
+//         return '0' + minutes;
+//     return minutes;
+// }
+// function checkSecond() {
+//     if (seconds  < 10)
+//         return '0' + seconds;
+//     return seconds;
+// }
+//
+// const time = `${checkHours()}:${checkMinutes()}:${checkSecond()}`;
+//
+// console.log('Time is: ', time);
+// alert('Будильник установлен на: ' + time)
 
-switch (question) {
-    case null:
-        alert('очень жаль, приходите еще!');
-        break;
-    case "1":
-        alert("Каталог хостелов");
-        break;
-    case "2":
-        alert("Каталог бюджетных отелей");
-        break;
-    case "3":
-        alert("Каталог отелей ***");
-        break;
-    case "4":
-        alert("Каталог отелей ****");
-        break;
-    case "5":
-        alert("Каталог лучших отелей");
-        break;
-    default:
-        alert('Неверный ввод, возможные варианты 1-5!');
-    }
+// Задание 10
+// let question = prompt('Введите от 1 до 5');
+// console.log(question);
+//
+// switch (question) {
+//     case null:
+//         alert('очень жаль, приходите еще!');
+//         break;
+//     case "1":
+//         alert("Каталог хостелов");
+//         break;
+//     case "2":
+//         alert("Каталог бюджетных отелей");
+//         break;
+//
+//     case "3":
+//         alert("Каталог отелей ***");
+//         break;
+//     case "4":
+//         alert("Каталог отелей ****");
+//         break;
+//     case "5":
+//         alert("Каталог лучших отелей");
+//         break;
+//     default:
+//         alert('Неверный ввод, возможные варианты 1-5!');
+//     }
 
 // Задание 9 ?????
 // let hours = 7;
 // let minutes = 3;
-// let seconds = 42;
+// let seconds = 22;
 //
-// const time = `${hours}:${minutes}:${seconds}`;
+// function checkHours() {
+//     if (hours  < 10)
+//         return '0' + hours;
+//     return hours;
+// }
+// function checkMinutes() {
+//     if (minutes  < 10)
+//         return '0' + minutes;
+//     return minutes;
+// }
+// function checkSecond() {
+//     if (seconds  < 10)
+//         return '0' + seconds;
+//     return seconds;
+// }
+//
+// const time = `${checkHours()}:${checkMinutes()}:${checkSecond()}`;
 //
 // console.log('Time is: ', time);
 
