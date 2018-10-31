@@ -55,8 +55,27 @@
 // Задание 9 ?????
 // let hours = 7;
 // let minutes = 3;
-// let seconds = 22;
+// let seconds = 42;
 //
+// console.log(String(hours));
+// console.log(hours);
+//
+// console.log(hours.length);
+// console.log(String(hours).length);
+//
+// const time = `${hours}:${minutes}:${seconds}`;
+//
+// console.log('Time is: ', time);
+
+// Задание 9 ?????
+let hours = 77;
+let minutes = 3;
+let seconds = 22;
+
+function isValueLessThanTen(value) {
+    if (value  < 10) return '0' + value;
+    return value;
+}
 // function checkHours() {
 //     if (hours  < 10)
 //         return '0' + hours;
@@ -72,10 +91,9 @@
 //         return '0' + seconds;
 //     return seconds;
 // }
-//
-// const time = `${checkHours()}:${checkMinutes()}:${checkSecond()}`;
-//
-// console.log('Time is: ', time);
+const time = `${isValueLessThanTen(hours)}:${isValueLessThanTen(minutes)}:${isValueLessThanTen(seconds)}`;
+
+console.log('Time is: ', time);
 
 // Задание 8
 // const num = Number.parseInt(Math.random() * 100);
