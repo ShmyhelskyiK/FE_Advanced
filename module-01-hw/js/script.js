@@ -1,7 +1,7 @@
 const adminLogin = 'admin';
 const adminPassword = 'm4ngo1zh4ackz0r';
-const cancelUser = 'Отменено пользователем!';
-const accessDenied = 'Доступ запрещен!';
+const canceledByUser = 'Отменено пользователем!';
+const warningAccessDenied = 'Доступ запрещен!';
 
 let enterLogin = prompt('Введите логин', '');
 
@@ -10,12 +10,12 @@ if (enterLogin === adminLogin) {
     if (enterPass === adminPassword){
         alert('Добро пожаловать!');
     } else  if (enterPass === null) {
-        alert(cancelUser);
+        alert(canceledByUser);
     } else {
-        alert(accessDenied);
+        alert(warningAccessDenied);
     }
 } else if (enterLogin === null) {
-    alert(cancelUser);
+    alert(canceledByUser);
 } else {
-    alert(accessDenied);
+    alert(warningAccessDenied);
 }
