@@ -3,7 +3,8 @@ const adminPassword = 'm4ngo1zh4ackz0r';
 const messageCanceled = 'Отменено пользователем!';
 const messageAccessDenied = 'Доступ запрещен!';
 
-let enterLogin = prompt('Введите логин', '');
+let enterLogin = prompt('Введите логин', '').toLowerCase();
+// toLowerCase(enterLogin);
 
 if (enterLogin === adminLogin) {
     let enterPass = prompt('Введите пароль', '');
