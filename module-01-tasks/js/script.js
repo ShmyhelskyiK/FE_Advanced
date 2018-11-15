@@ -68,7 +68,7 @@
 // console.log('Time is: ', time);
 
 // Задание 9 ?????
-let hours = 77;
+let hours = 2;
 let minutes = 3;
 let seconds = 22;
 

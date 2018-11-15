@@ -29,23 +29,22 @@ do {
     userInput = prompt('Введите число...');
 
     if (userInput === null) {
-       alert('Вы закончили ввод данных.');
-       break
+        alert('Вы закончили ввод данных.');
+        break
     }
-    if (userInput % 1 !== 0) {
-        alert('Было введено не число, попробуйте еще раз!');
+    if (isNaN(userInput)) {
+        alert('Было введено не число, попробуйте еще раз!!!!');
         continue;
     }
-    if (userInput = parseInt(userInput)) {
+    if (userInput = parseFloat(userInput)) {
         numbers.push(userInput)
     }
+
+
 } while (true);
 
 for(let i = 0; i < numbers.length; i++) {
     total += numbers[i];
 }
 
-alert(`Массив состоит из следующих цифр ${numbers}`);
 alert(`Сумма чисел равна ${total}`);
-console.log(numbers);
-console.log(total);
