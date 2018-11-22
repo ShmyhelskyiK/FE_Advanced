@@ -20,31 +20,44 @@
     - Вывести alert с текстом `Общая сумма чисел равна ${сумма}`
 */
 
-
 let userInput;
 const numbers = [];
 let total = 0;
 
 do {
-    userInput = prompt('Введите число...');
+  userInput = prompt("Введите число...");
 
-    if (userInput === null) {
-        alert('Вы закончили ввод данных.');
-        break
-    }
-    if (isNaN(userInput)) {
-        alert('Было введено не число, попробуйте еще раз!!!!');
-        continue;
-    }
-    if (userInput = parseFloat(userInput)) {
-        numbers.push(userInput)
-    }
-
-
+  if (userInput === null) {
+    alert("Вы закончили ввод данных.");
+    break;
+  }
+  if (isNaN(userInput)) {
+    alert("Было введено не число, попробуйте еще раз!!!!");
+    continue;
+  }
+  if ((userInput = parseFloat(userInput))) {
+    numbers.push(userInput);
+  }
 } while (true);
 
-for(let i = 0; i < numbers.length; i++) {
-    total += numbers[i];
+// while (true) {
+//   userInput = prompt("Введите число...");
+//   //
+//   if (userInput === null) {
+//     alert("Вы закончили ввод данных.");
+//     break;
+//   }
+//   if (isNaN(userInput)) {
+//     alert("Было введено не число, попробуйте еще раз!!!!");
+//     // continue;
+//   }
+//   if ((userInput = parseFloat(userInput))) {
+//     numbers.push(userInput);
+//   }
+// }
+//
+for (let i = 0; i < numbers.length; i++) {
+  total += numbers[i];
 }
 
 alert(`Сумма чисел равна ${total}`);
